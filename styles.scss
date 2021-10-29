@@ -297,8 +297,49 @@ body{
 }
 
 .projectsWrapper p{
-    border-bottom: 1px solid white;
+
+    color: white;
 }
 
 
 
+
+
+
+
+
+
+
+.projectOneCode{
+    display: none;
+}
+.projectOneCodeAfterClick{
+    display: block;
+}
+
+
+
+.projectTwoCode{
+    display: none;
+}
+.projectTwoCodeAfterClick{
+    display: block;
+
+}
+
+
+.projectThreeCode{
+    display: none;
+}
+.projectThreeCodeAfterClick{
+    display: block;
+}
+
+
+
+.projectFourCode{
+    display: none;
+}
+.projectFourCodeAfterClick{
+    display: block;
+}
