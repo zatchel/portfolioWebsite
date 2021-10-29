@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400&display=swap');
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+// *********************NAVBAR*******************
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.navbar ul{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.navbar li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbarLogo{
+    flex: 1;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.navbarToggle{
+    display: none;
+}
+
+.navbarLinks:hover{
+    background-color: cyan;
+}
+
+.navbarLinks:hover a{
+    color: black;
+}
+
+@media (max-width: 600px){
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+
+    .navbarToggle{
+        display: block;
+    }
+
+    .navbarToggle:hover{
+        cursor: pointer;
+    }
+
+    .navbarLinks{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .active{
+        display: block;
+    }
+}
+
+// ***********************************************
+
+// section {
+// 	display: -webkit-flex;
+// 	display: -moz-flex;
+// 	display: -ms-flex;
+// 	display: -o-flex;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+
+.wrapper{
+    display: flex;
+	flex-direction: column;
+    
+	
+}
+
+.hero{
+    position: relative;
+	justify-content: center;
+	min-height: calc(100vh - 59px);
+	color: #fff;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+//DO THIS MEDIA QUERY ON HAMBURGER MENU CLICK
+
+// @media (max-width: 600px){
+//     .hero{
+//         min-height: calc(100vh - 259px);
+//     }
+// }
+
+.hero .heroImage{
+    background-image: url(/img/ansgar-scheffold-HUk2W9fa-Jw-unsplash.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero .heroImage::after{
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0.3));
+	opacity: .8;
+}
+
+.hero h1{
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.576);
+}
+
+.hero h1 span{
+    color: rgb(38, 235, 176);
+}
+
+.hero p{
+    font-weight: 400;
+    max-width: 80%;
+}
+
+.about{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(11, 49, 51, 0.878);
+    border-top: 2px solid lightblue;
+    text-align: center;
+    
+}
+
+.aboutMe{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 400;
+    width: 80%;
+    font-family: 'Changa', sans-serif;
+    color: white;
+    
+}
+
+.aboutMeSmall{
+    width: 80%;
+    color: white;
+}
+
+.projects{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.583), rgb(38, 235, 176));
+    border-top: 2px solid lightblue;
+    text-align: center;
+}
+
+.projects h1{
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: white;
+    position: relative;
+    // bottom: 25%;
+}
+
+// .projectsWrapper{
+//     display: grid;
+//     margin-top: 5%;
+//     grid-template-rows: 1fr 1fr;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-areas: 
+//         "p1 p2"
+//         "p3 p4";
+//     justify-items: center;
+    
+// }
+
+// .tipCalcText{
+    
+// }
+
+// .projectOne{
+//     grid-area: p1;
+//     background-color: white;
+//     background-image: url(/img/tipcalcscreenshot.png);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: 10px 0px 0px 0px;
+//     margin-left: 10px;
+//     width: 500px;
+//     height: 300px;
+// }
+
+// .projectTwo{
+//     grid-area: p2;
+//     background-color: grey;
+//     width: 500px;
+//     height: 300px;
+// }
+
+// .projectThree{
+//     grid-area: p3;
+//     background-color: blue;
+//     width: 500px;
+//     height: 300px;
+// }
+
+// .projectFour{
+//     grid-area: p4;
+//     background-color: green;
+//     width: 500px;
+//     height: 300px;
+// }
+
+
+.projectsWrapper{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 80px;
+}
+
+.projectsWrapper h2 a{
+    color: rgba(255, 255, 255, 0.576);
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+// .projectsWrapper h2 a{
+//     text-decoration: none;
+    
+// }
+
+.projectsWrapper h2 a:hover{
+    color: white;
+}
+
+.projectsWrapper h3{
+    font-size: 1.1rem;
+}
+
+.projectsWrapper p{
+    border-bottom: 1px solid white;
+}
+
+
+

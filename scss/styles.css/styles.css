@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200;400&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbarLogo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.navbarToggle {
+  display: none;
+}
+
+.navbarLinks:hover {
+  background-color: cyan;
+}
+
+.navbarLinks:hover a {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbarToggle {
+    display: block;
+  }
+  .navbarToggle:hover {
+    cursor: pointer;
+  }
+  .navbarLinks {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: calc(100vh - 59px);
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+}
+
+.hero .heroImage {
+  background-image: url(/img/ansgar-scheffold-HUk2W9fa-Jw-unsplash.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero .heroImage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.3));
+  opacity: .8;
+}
+
+.hero h1 {
+  font-family: 'Changa', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.576);
+}
+
+.hero h1 span {
+  color: #26ebb0;
+}
+
+.hero p {
+  font-weight: 400;
+  max-width: 80%;
+}
+
+.about {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(11, 49, 51, 0.878);
+  border-top: 2px solid lightblue;
+  text-align: center;
+}
+
+.aboutMe {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 400;
+  width: 80%;
+  font-family: 'Changa', sans-serif;
+  color: white;
+}
+
+.aboutMeSmall {
+  width: 80%;
+  color: white;
+}
+
+.projects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.583)), to(#26ebb0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.583), #26ebb0);
+  border-top: 2px solid lightblue;
+  text-align: center;
+}
+
+.projects h1 {
+  font-family: 'Changa', sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: white;
+  position: relative;
+}
+
+.projectsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 80px;
+}
+
+.projectsWrapper h2 a {
+  color: rgba(255, 255, 255, 0.576);
+  display: inline-block;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.projectsWrapper h2 a:hover {
+  color: white;
+}
+
+.projectsWrapper h3 {
+  font-size: 1.1rem;
+}
+
+.projectsWrapper p {
+  border-bottom: 1px solid white;
+}
+/*# sourceMappingURL=styles.css.map */
