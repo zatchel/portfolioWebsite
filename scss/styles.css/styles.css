@@ -292,7 +292,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 80px;
+  margin: 0px 80px;
 }
 
 .projectsWrapper h2 a {
@@ -314,6 +314,14 @@ h1 {
 
 .projectsWrapper p {
   color: rgba(0, 0, 0, 0.789);
+}
+
+.project {
+  margin-top: 40px;
+}
+
+.projectFour {
+  margin-bottom: 40px;
 }
 
 .projectOneCode {
