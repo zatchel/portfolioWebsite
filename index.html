@@ -7,6 +7,7 @@
     <title>Zachary Hurst - Front End Dev</title>
     <link rel="stylesheet" href="/scss/styles.css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/90a8b12f43.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="wrapper">   
@@ -16,9 +17,9 @@
                     <li class="navbarLogo">portfolio.</li>
                     <li class="navbarToggle"><i class="fa fa-bars"></i></li>
                     <li class="navbarLinks"><a href="#">Home</a></li>
-                    <li class="navbarLinks"><a href="#">About</a></li>
-                    <li class="navbarLinks"><a href="#">Projects</a></li>
-                    <li class="navbarLinks"><a href="#">Contact</a></li>
+                    <li class="navbarLinks"><a href="#about">About</a></li>
+                    <li class="navbarLinks"><a href="#projects">Projects</a></li>
+                    <li class="navbarLinks"><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,34 +32,40 @@
     </section>
     
     
-    <section class="about">
-        <h1 class="aboutMe">skills & about</h1>
-        <p class="aboutMeSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vero? Itaque veritatis quas amet debitis temporibus culpa commodi consequuntur blanditiis fuga tenetur molestiae, corrupti explicabo ut ab dicta minima tempora dolor accusamus et quia sed nam. Vitae hic dicta nesciunt?
+    <section class="about" id="about">
+        <h1>Skills & About</h1>
+        
+        <div class="iconWrapper">
+            <i class="fa fa-html5 fa-5x" style="color: white;"></i>
+            <i class="fab fa-css3-alt fa-5x" style="color:white;"></i>
+            <i class="fab fa-sass fa-5x" style="color:white;"></i>
+            <i class="fab fa-js-square fa-5x" style="color:white;"></i>
+        
+        </div>
+
+        <div class="aboutTextWrapper">
+            <p class="aboutMeSmall"> I've been teaching myself front-end development over the past year, I'm looking to directly apply what I've learned in a work environment while having an opportunity to learn to new things in a more structured setting. 
+                <br><br> I understand FlexBox, CSS Grid, SASS, Mobile-first design, JavaScript Dom Manipulation, basic JavaScript logic, and how to lay out a page using HTML. <br><br>Beyond that I've worked in team-based customer service roles for over 10 years, and my hobbies are writing/playing music and playing video games.<br><br>Thank you for viewing my portfolio site! Below are some projects that I've completed, mostly showcasing HTML, CSS/SASS, JavaScript Dom Manipulation, and basic JavaScript logic.  
         </p>
+        </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h1>projects</h1>
         <div class="projectsWrapper">
             <div class="projectOne">
-                <h2 class="projectOneBigText"><a href="https://ground-up-tip-calc.vercel.app" class="projectOneLink">tip calculator</a></h2>
+                <h2 class="projectOneBigText"><a href="https://ground-up-tip-calc.vercel.app" target="_blank" class="projectOneLink">tip calculator</a></h2>
                 <h3 class="projectOneSmallText">HTML/CSS/SASS/JavaScript</h3>
                 <button class="showCode" id="showCodeProjectOne">Click here to show code!</button>
                 <span class="projectOneCode" id="projectOneCode"><iframe width="100%" height="300" src="//jsfiddle.net/zhurst92/vtkrcby0/embedded/js,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe></span>
-                <p class="projectOneDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsa corporis sapiente quasi expedita soluta porro ex pariatur obcaecati similique quam, suscipit minima rerum. Numquam autem corrupti cum non nihil.
-                Consequuntur, dolor rerum. Reprehenderit veritatis, quaerat laboriosam eum magni, officia quas nulla inventore consequatur numquam totam sunt nihil atque dicta ipsa perferendis. Nulla rerum earum, reprehenderit consequuntur iste facilis dolorem.
-                </p>
 
             </div>
             <div class="projectTwo">
-                <h2 class="projectTwoBigText"><a href="https://day-and-time-dynamic.vercel.app" class="projectTwoLink">day & time display</a></h2>
+                <h2 class="projectTwoBigText"><a href="https://day-and-time-dynamic.vercel.app" target="_blank" class="projectTwoLink">day & time display</a></h2>
                 <button class="showCode" id="showCodeProjectTwo">Click here to show code!</button>
                 <h3 class="projectTwoSmallText">HTML/CSS/SASS/JavaScript</h3>
                 <span class="projectTwoCode" id="projectTwoCode"><iframe width="100%" height="300" src="//jsfiddle.net/zhurst92/d5b6eh1k/1/embedded/js,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe></span>
                 
-                <p class="projectTwoDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsa corporis sapiente quasi expedita soluta porro ex pariatur obcaecati similique quam, suscipit minima rerum. Numquam autem corrupti cum non nihil.
-                Consequuntur, dolor rerum. Reprehenderit veritatis, quaerat laboriosam eum magni, officia quas nulla inventore consequatur numquam totam sunt nihil atque dicta ipsa perferendis. Nulla rerum earum, reprehenderit consequuntur iste facilis dolorem.
-                </p>
 
             </div>
             <div class="projectThree">
@@ -67,24 +74,19 @@
                 <button class="showCode" id="showCodeProjectThree">Click here to show code!</button>
                 <span class="projectThreeCode" id="projectThreeCode"><iframe width="100%" height="300" src="//jsfiddle.net/zhurst92/asoL19hg/embedded/js,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe></span>
                 
-                <p class="projectThreeDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsa corporis sapiente quasi expedita soluta porro ex pariatur obcaecati similique quam, suscipit minima rerum. Numquam autem corrupti cum non nihil.
-                Consequuntur, dolor rerum. Reprehenderit veritatis, quaerat laboriosam eum magni, officia quas nulla inventore consequatur numquam totam sunt nihil atque dicta ipsa perferendis. Nulla rerum earum, reprehenderit consequuntur iste facilis dolorem.
-                </p>
 
             </div>
             <div class="projectFour">
-                <h2 class="projectFourBigText"><a href="https://3columncard-fem.vercel.app" class="projectFourLink">landing page from design.</a></h2>
+                <h2 class="projectFourBigText"><a href="https://3columncard-fem.vercel.app" target="_blank" class="projectFourLink">landing page from design.</a></h2>
                 <h3 class="projectFourSmallText">HTML/CSS/SASS/JavaScript</h3>
                 <button class="showCode" id="showCodeProjectFour">Click here to show code!</button>
                 <span class="projectFourCode" id="projectFourCode"><iframe width="100%" height="300" src="//jsfiddle.net/zhurst92/h2q13cfs/embedded/html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe></span>
                 
-                <p class="projectFourDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsa corporis sapiente quasi expedita soluta porro ex pariatur obcaecati similique quam, suscipit minima rerum. Numquam autem corrupti cum non nihil.
-                Consequuntur, dolor rerum. Reprehenderit veritatis, quaerat laboriosam eum magni, officia quas nulla inventore consequatur numquam totam sunt nihil atque dicta ipsa perferendis. Nulla rerum earum, reprehenderit consequuntur iste facilis dolorem.
-                </p>
 
             </div>
         </div>
     </section>
+    <footer id="footer"><p class = footerText>Contact me at: <a href="mailto:zacharyhurst2@gmail.com">zacharyhurst2@gmail.com</a>  </p></footer>
 
 
 

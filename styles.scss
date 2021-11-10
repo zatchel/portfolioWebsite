@@ -12,6 +12,7 @@
 
 html{
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 body{
@@ -19,6 +20,10 @@ body{
     
 }
 
+h1{
+    margin: 0;
+    padding: 0;
+}
 // *********************NAVBAR*******************
 .header{
     position: absolute;
@@ -154,6 +159,7 @@ body{
 .hero h1{
     font-family: 'Changa', sans-serif;
     font-weight: 400;
+    line-height: 50px;
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.576);
 }
@@ -169,7 +175,8 @@ body{
 
 .about{
     width: 100%;
-    height: 400px;
+    // height: 100%;
+    min-height: 100vh;
     display: flex;
     position: relative;
     justify-content: center;
@@ -178,23 +185,50 @@ body{
     background-color: rgba(11, 49, 51, 0.878);
     border-top: 2px solid lightblue;
     text-align: center;
-    
+    overflow: auto;
 }
 
-.aboutMe{
-    position: relative;
+.about h1{
     font-size: 4rem;
+    text-decoration: underline;
+    line-height: 70px;
     font-weight: 400;
+    position: absolute;
+    top: 10%;
     width: 80%;
     font-family: 'Changa', sans-serif;
     color: white;
-    
+    flex: 0;
 }
 
+.aboutTextWrapper{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconWrapper{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    height: 200px;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+
 .aboutMeSmall{
+    margin-top: 40px;
+    position: absolute;
+    top:50%;
     width: 80%;
     color: white;
+    line-height: 30px;
 }
+
 
 .projects{
     width: 100%;
@@ -202,7 +236,7 @@ body{
     position: relative;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.583), rgb(38, 235, 176));
     border-top: 2px solid lightblue;
     text-align: center;
@@ -210,10 +244,11 @@ body{
 
 .projects h1{
     font-family: 'Changa', sans-serif;
+    text-decoration: underline;
     font-weight: 400;
     font-size: 4rem;
-    color: white;
-    position: relative;
+    color: rgb(255, 255, 255);
+    // position: relative;
     // bottom: 25%;
 }
 
@@ -272,15 +307,16 @@ body{
     justify-items: center;
     align-items: center;
     flex-direction: column;
+
     margin: 0 80px;
 }
 
 .projectsWrapper h2 a{
-    color: rgba(255, 255, 255, 0.576);
+    color: rgb(255, 255, 255);
     display: inline-block;
     font-size: 2rem;
     margin-top: 20px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 // .projectsWrapper h2 a{
@@ -289,16 +325,17 @@ body{
 // }
 
 .projectsWrapper h2 a:hover{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .projectsWrapper h3{
     font-size: 1.1rem;
+    color: rgb(23, 68, 62);
 }
 
 .projectsWrapper p{
 
-    color: white;
+    color: rgba(0, 0, 0, 0.789);
 }
 
 
@@ -342,4 +379,21 @@ body{
 }
 .projectFourCodeAfterClick{
     display: block;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.248);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.footerText{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
