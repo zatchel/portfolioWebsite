@@ -237,7 +237,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 200px;
+  height: 100px;
   max-width: 100%;
   position: absolute;
   top: 25%;
@@ -246,7 +246,7 @@ h1 {
 .aboutMeSmall {
   margin-top: 40px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 80%;
   color: white;
   line-height: 30px;
@@ -332,6 +332,14 @@ h1 {
   display: block;
 }
 
+.projectOnePointFiveCode {
+  display: none;
+}
+
+.projectOnePointFiveCodeAfterClick {
+  display: block;
+}
+
 .projectTwoCode {
   display: none;
 }
@@ -373,7 +381,7 @@ footer {
 .footerText {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,9 @@ const navbarLinks = document.getElementsByClassName('navbarLinks');
 const showCodeButtonOne = document.getElementById('showCodeProjectOne');
 const codeSpanOne = document.getElementById('projectOneCode');
 
+const showCodeButtonOnePointFive = document.getElementById('showCodeProjectOnePointFive');
+const codeSpanOnePointFive = document.getElementById('projectOnePointFiveCode');
+
 const showCodeButtonTwo = document.getElementById('showCodeProjectTwo');
 const codeSpanTwo = document.getElementById('projectTwoCode');
 
@@ -27,6 +30,13 @@ showCodeButtonOne.addEventListener('click', () => {
     }
 })
 
+showCodeButtonOnePointFive.addEventListener('click', () => {
+    if (codeSpanOnePointFive.className == "projectOnePointFiveCodeAfterClick"){
+        codeSpanOnePointFive.className = "projectOnePointFiveCode";
+    }else{
+    codeSpanOnePointFive.className = "projectOnePointFiveCodeAfterClick";
+    }
+})
 
 showCodeButtonTwo.addEventListener('click', () => {
     if (codeSpanTwo.className == "projectTwoCodeAfterClick"){
